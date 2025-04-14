@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle Ambiental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="SRC/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Painel de Controle Ambiental</h1>
+    </header>
+    <main>
+        <h2 class="titulo">Dados Ambientais</h2>
+        <div class="dados">
+            <p>Temperatura: <span id="temperatura">25</span>°C</p>
+            <p>Umidade do Ar: <span id="umidadeAr">60</span>%</p>
+            <p>Umidade do Solo: <span id="umidadeSolo">75</span>%</p>
+            <p>Última atualização: <span id="dataHora">Agora</span></p>
+        </div>
+        <div class="grafico">
+            <canvas id="grafico"></canvas>
+        </div>
+        <div class="botoes-controle">
+            <button id="acionarBomba" class="botao">Acionar Bomba</button>
+            <a href="dashboard.html" class="botao">Registro de dados</a>
+        </div>
+        <p id="statusBomba">Status da Bomba: Desligada</p>
+    </main>
+    <script src="SRC/js/script.js"></script>
+</body>
+
+</html>
